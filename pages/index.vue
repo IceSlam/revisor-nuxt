@@ -1,13 +1,14 @@
 <template>
-  <div>
-    <a class="btn btn-danger is-btn">1</a>
-  </div>
+  <certifsTpl />
 </template>
 
 <script>
 
+import certifsTpl from '@/components/certifs'
+
 export default {
   components: {
+    certifsTpl
   },
   head: {
     title: 'Ревизор - бухгалтерские и юридические услуги 🚀',
