@@ -1,5 +1,6 @@
 <template>
   <div id="home-page">
+    <servicesListHome />
     <AboutHomeTpl />
     <certifsTpl />
   </div>
@@ -7,13 +8,15 @@
 
 <script>
 
+import servicesListHome from '@/components/home/services-home'
 import AboutHomeTpl from '@/components/home/about'
 import certifsTpl from '@/components/home/certifs'
 
 export default {
   components: {
     certifsTpl,
-    AboutHomeTpl
+    AboutHomeTpl,
+    servicesListHome
   },
   head: {
     title: 'Ревизор - бухгалтерские и юридические услуги 🚀',

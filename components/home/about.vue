@@ -5,7 +5,7 @@
         <h2>
           О компании
         </h2>
-        <p v-if="aboutPageInfo.excerpt" v-html="aboutPageInfo.excerpt.rendered"></p>
+        <p v-if="aboutPageInfo.excerpt" v-html="aboutPageInfo.excerpt.rendered" />
         <div class="is-home__about-block">
           <nuxt-link to="/about" class="btn is-btn-more is-router-link-to">
             <div style="margin-right:.5em;" class="">
