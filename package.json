@@ -1,0 +1,6 @@
+{
+  "name": "revisor-nuxt",
+  "scripts": {
+    "dev": "nuxt"
+  }
+}
