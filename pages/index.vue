@@ -1,14 +1,19 @@
 <template>
-  <certifsTpl />
+  <div id="home-page">
+    <AboutHomeTpl />
+    <certifsTpl />
+  </div>
 </template>
 
 <script>
 
-import certifsTpl from '@/components/certifs'
+import AboutHomeTpl from '@/components/home/about'
+import certifsTpl from '@/components/home/certifs'
 
 export default {
   components: {
-    certifsTpl
+    certifsTpl,
+    AboutHomeTpl
   },
   head: {
     title: 'Ревизор - бухгалтерские и юридические услуги 🚀',
