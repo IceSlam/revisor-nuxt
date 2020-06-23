@@ -4,13 +4,11 @@
       <b-row>
         <div>
           <b-carousel
-            id="carousel-1"
-            v-model="slide"
+            id="carousel-fade"
+            fade
             :interval="3000"
             img-width="1140"
             img-height="482"
-            @sliding-start="onSlideStart"
-            @sliding-end="onSlideEnd"
           >
             <b-carousel-slide v-for="slide in CarouselData" :key="slide.index" img-blank>
               <div class="is-carousel-item">
@@ -26,7 +24,7 @@
                         </p>
                         <a class="btn is-btn-out" target="_blank" :href="slide.link">
                           Подробнее об акции
-                          <i class="fas fa-chevron-right"></i>
+                          <i class="fas fa-chevron-right" />
                         </a>
                       </div>
                     </div>
