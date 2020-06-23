@@ -234,7 +234,7 @@
 
 <script>
 export default {
-  name: 'ServicesListHome'
+  name: 'ServicesList'
 }
 </script>
 
