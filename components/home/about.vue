@@ -7,20 +7,20 @@
         </h2>
         <p v-if="aboutPageInfo.excerpt" v-html="aboutPageInfo.excerpt.rendered" />
         <div class="is-home__about-block">
-          <nuxt-link to="/about" class="btn is-btn-more is-router-link-to">
-            <div style="margin-right:.5em;" class="">
+          <nuxt-link to="/about" class="btn is-btn-more is-router-link-to" style="margin-right:.5em;margin-top:1em;">
+            <div style="margin-right:.5em;margin-top: .25em;" class="">
               <img src="assets/img/btnMore.svg" alt="">
             </div>
-            <div style="white-space: pre-wrap;line-height:1;padding-top:.4em" class="">
+            <div style="white-space: pre-line;line-height:1;padding: 0;margin: -.5em auto;" class="">
               Читать подробнее
               <span>о компании</span>
             </div>
           </nuxt-link>
-          <a class="btn is-btn-video">
-            <div style="margin-right:.5em;" class="">
+          <a class="btn is-btn-video" style="margin-right:.5em;margin-top:1em;">
+            <div style="margin-right:.5em;margin-top: .25em;" class="">
               <img src="assets/img/btnVideo.svg" alt="">
             </div>
-            <div style="white-space: pre-wrap;line-height:1;padding-top:.4em" class="">
+            <div style="white-space: pre-line;line-height:1;padding:0;margin-top:-.5em;" class="">
               Смотреть видео
               <span>о компании</span>
             </div>

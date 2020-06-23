@@ -15,7 +15,7 @@
                 <b-form-input type="text" placeholder="Имя" required />
               </b-col>
               <b-col>
-                <b-form-input type="tel" v-model="tel" placeholder="Телефон" required />
+                <b-form-input type="tel" placeholder="Телефон" required />
               </b-col>
             </b-row>
             <b-row style="margin-top:2em;">
@@ -35,14 +35,14 @@
               </b-col>
               <b-col md="8" class="d-flex" style="align-items:center;">
                 <div class="custom-control custom-checkbox">
-                    <input type="checkbox" class="custom-control-input" id="defaultUnchecked"  required >
-                    <label class="custom-control-label" for="defaultUnchecked"><router-link to="/policy">С политикой конфидициальных данных ознакомлен</router-link></label>
+                  <input id="defaultUnchecked" type="checkbox" class="custom-control-input" required>
+                  <label class="custom-control-label" for="defaultUnchecked"><router-link to="/policy">С политикой конфидициальных данных ознакомлен</router-link></label>
                 </div>
               </b-col>
             </b-row>
           </form>
         </b-col>
-        <b-col md="12" lg="6"></b-col>
+        <b-col md="12" lg="6" />
       </b-row>
     </b-container>
   </div>

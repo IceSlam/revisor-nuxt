@@ -23,5 +23,8 @@ export default {
 
 </script>
 
-<style>
+<style lang="css">
+@import url(@/static/assets/css/main.css);
+@import url(@/static/assets/css/media.css);
+
 </style>
