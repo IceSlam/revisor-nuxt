@@ -3,7 +3,7 @@
     <b-navbar toggleable="lg" type="light" class="is-navbar">
       <b-container>
         <b-navbar-brand href="/" class="is-navbar__brand">
-          <img src="assets/img/revisor_logo.svg" class="is-navbar__brand-logo" alt="Ревизор - бухгалтерские и юридические услуги">
+          <img src="@/assets/img/revisor_logo.svg" class="is-navbar__brand-logo" alt="Ревизор - бухгалтерские и юридические услуги">
         </b-navbar-brand>
         <b-nav-toggle label="Navbar toggler" target="header-nav">
           <template v-slot:default="{ expanded }">
@@ -62,7 +62,7 @@
               </b-col>
               <b-col md="12" class="is-header__callback-block">
                 <a v-b-modal.callback href="#" class="is-header__callback">
-                  <img src="assets/img/headerCallIco.svg" alt="Заказть звонок">
+                  <img src="@/assets/img/headerCallIco.svg" alt="Заказть звонок">
                   <span>Заказать звонок</span>
                 </a>
                 <b-modal id="callback" title="Обратный звонок" centered hide-footer>

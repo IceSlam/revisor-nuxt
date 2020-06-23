@@ -3,7 +3,7 @@
     <b-navbar toggleable="lg" type="light" class="is-navbar">
       <b-container>
         <b-navbar-brand href="/" class="is-navbar__brand">
-          <img src="assets/img/revisor_logo.svg" class="is-navbar__brand-logo" alt="Ревизор - бухгалтерские и юридические услуги">
+          <img src="@/assets/img/revisor_logo.svg" class="is-navbar__brand-logo" alt="Ревизор - бухгалтерские и юридические услуги">
         </b-navbar-brand>
         <b-collapse class="container is-footer__collapse" is-nav>
           <b-col md="8">
@@ -51,7 +51,7 @@
               </b-col>
               <b-col md="12" style="margin-top:.5em">
                 <a class="is-footer__dev-link" style="margin-top:1em" href="https://alianscompany.ru">
-                  Разработка сайта <img class="is-footer__dev-img" src="assets/img/alians_logo.svg" alt="">
+                  Разработка сайта <img class="is-footer__dev-img" src="@/assets/img/alians_logo.svg" alt="">
                 </a>
               </b-col>
             </b-row>
