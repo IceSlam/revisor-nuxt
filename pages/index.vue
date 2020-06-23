@@ -1,5 +1,6 @@
 <template>
   <div id="home-page">
+    <SliderHome />
     <servicesListHome />
     <AboutHomeTpl />
     <certifsTpl />
@@ -8,12 +9,14 @@
 
 <script>
 
+import SliderHome from '@/components/home/slider'
 import servicesListHome from '@/components/home/services-home'
 import AboutHomeTpl from '@/components/home/about'
 import certifsTpl from '@/components/home/certifs'
 
 export default {
   components: {
+    SliderHome,
     certifsTpl,
     AboutHomeTpl,
     servicesListHome

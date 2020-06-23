@@ -701,6 +701,7 @@ ul ul a:hover {
     font-size: 17px;
     line-height: 100%;
     transition: all .625s;
+    padding: .75rem 2rem;
   }
 
   .is-btn-out:hover {
@@ -713,7 +714,6 @@ ul ul a:hover {
   .is-btn i {
     margin-left: .5em;
   }
-
 
     .is-carousel-wrap {
       max-width:1140px;
@@ -790,6 +790,11 @@ ul ul a:hover {
     font-size: 3em;
     transition: all .5s ease-in-out !important;
     opacity: 1;
+  }
+
+  .carousel-caption {
+    right: 0 !important;
+    left: 0 !important;
   }
 
   /* homePageAbout component */
