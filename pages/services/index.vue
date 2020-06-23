@@ -1,13 +1,33 @@
 <template>
-  <div>
-    1
+  <div id="services-page" class="is-services">
+    <b-container>
+      <div class="is-breadcrumb-list">
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item">
+              <nuxt-link to="/" exact>
+                Главная
+              </nuxt-link>
+            </li>
+            <li class="breadcrumb-item active">
+              Услуги компании
+            </li>
+          </ol>
+        </nav>
+      </div>
+      <ServicesList />
+    </b-container>
   </div>
 </template>
 
 <script>
 
+import ServicesList from '@/components/services/services'
+
 export default {
+  name: 'ServicesPage',
   components: {
+    ServicesList
   },
   head: {
     title: 'Услуги компании | Ревизор 🚀',
