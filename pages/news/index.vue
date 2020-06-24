@@ -33,12 +33,12 @@
                 <img src="https://a.al-dev.ru/assets/img/servicesIcon1.svg" alt="Новости">
                 <div>
                   <p>
-                  Новость
+                    Новость
                   </p>
                   <p class="is-news__item-chevron">
-                    <i class="fas fa-chevron-right"></i>
+                    <i class="fas fa-chevron-right" />
                   </p>
-                  <a class="btn is-btn is-router-link-to" >
+                  <a class="btn is-btn is-router-link-to">
                     Подробнее
                   </a>
                 </div>
@@ -55,12 +55,12 @@
                 <img src="https://a.al-dev.ru/assets/img/servicesIcon1.svg" alt="Новости">
                 <div>
                   <p>
-                  Новость
+                    Новость
                   </p>
                   <p class="is-news__item-chevron">
-                    <i class="fas fa-chevron-right"></i>
+                    <i class="fas fa-chevron-right" />
                   </p>
-                  <a class="btn is-btn is-router-link-to" >
+                  <a class="btn is-btn is-router-link-to">
                     Подробнее
                   </a>
                 </div>
@@ -77,12 +77,12 @@
                 <img src="https://a.al-dev.ru/assets/img/servicesIcon1.svg" alt="Новости">
                 <div>
                   <p>
-                  Новость
+                    Новость
                   </p>
                   <p class="is-news__item-chevron">
-                    <i class="fas fa-chevron-right"></i>
+                    <i class="fas fa-chevron-right" />
                   </p>
-                  <a class="btn is-btn is-router-link-to" >
+                  <a class="btn is-btn is-router-link-to">
                     Подробнее
                   </a>
                 </div>
@@ -99,12 +99,12 @@
                 <img src="https://a.al-dev.ru/assets/img/servicesIcon1.svg" alt="Новости">
                 <div>
                   <p>
-                  Новость
+                    Новость
                   </p>
                   <p class="is-news__item-chevron">
-                    <i class="fas fa-chevron-right"></i>
+                    <i class="fas fa-chevron-right" />
                   </p>
-                  <a class="btn is-btn is-router-link-to" >
+                  <a class="btn is-btn is-router-link-to">
                     Подробнее
                   </a>
                 </div>
@@ -121,12 +121,12 @@
                 <img src="https://a.al-dev.ru/assets/img/servicesIcon1.svg" alt="Новости">
                 <div>
                   <p>
-                  Новость
+                    Новость
                   </p>
                   <p class="is-news__item-chevron">
-                    <i class="fas fa-chevron-right"></i>
+                    <i class="fas fa-chevron-right" />
                   </p>
-                  <a class="btn is-btn is-router-link-to" >
+                  <a class="btn is-btn is-router-link-to">
                     Подробнее
                   </a>
                 </div>
@@ -143,12 +143,12 @@
                 <img src="https://a.al-dev.ru/assets/img/servicesIcon1.svg" alt="Новости">
                 <div>
                   <p>
-                  Новость
+                    Новость
                   </p>
                   <p class="is-news__item-chevron">
-                    <i class="fas fa-chevron-right"></i>
+                    <i class="fas fa-chevron-right" />
                   </p>
-                  <a class="btn is-btn is-router-link-to" >
+                  <a class="btn is-btn is-router-link-to">
                     Подробнее
                   </a>
                 </div>
@@ -165,12 +165,12 @@
                 <img src="https://a.al-dev.ru/assets/img/servicesIcon1.svg" alt="Новости">
                 <div>
                   <p>
-                  Новость
+                    Новость
                   </p>
                   <p class="is-news__item-chevron">
-                    <i class="fas fa-chevron-right"></i>
+                    <i class="fas fa-chevron-right" />
                   </p>
-                  <a class="btn is-btn is-router-link-to" >
+                  <a class="btn is-btn is-router-link-to">
                     Подробнее
                   </a>
                 </div>
@@ -187,12 +187,12 @@
                 <img src="https://a.al-dev.ru/assets/img/servicesIcon1.svg" alt="Новости">
                 <div>
                   <p>
-                  Новость
+                    Новость
                   </p>
                   <p class="is-news__item-chevron">
-                    <i class="fas fa-chevron-right"></i>
+                    <i class="fas fa-chevron-right" />
                   </p>
-                  <a class="btn is-btn is-router-link-to" >
+                  <a class="btn is-btn is-router-link-to">
                     Подробнее
                   </a>
                 </div>
@@ -209,12 +209,12 @@
                 <img src="https://a.al-dev.ru/assets/img/servicesIcon1.svg" alt="Новости">
                 <div>
                   <p>
-                  Новость
+                    Новость
                   </p>
                   <p class="is-news__item-chevron">
-                    <i class="fas fa-chevron-right"></i>
+                    <i class="fas fa-chevron-right" />
                   </p>
-                  <a class="btn is-btn is-router-link-to" >
+                  <a class="btn is-btn is-router-link-to">
                     Подробнее
                   </a>
                 </div>
@@ -231,12 +231,12 @@
                 <img src="https://a.al-dev.ru/assets/img/servicesIcon1.svg" alt="Новости">
                 <div>
                   <p>
-                  Новость
+                    Новость
                   </p>
                   <p class="is-news__item-chevron">
-                    <i class="fas fa-chevron-right"></i>
+                    <i class="fas fa-chevron-right" />
                   </p>
-                  <a class="btn is-btn is-router-link-to" >
+                  <a class="btn is-btn is-router-link-to">
                     Подробнее
                   </a>
                 </div>

@@ -23,7 +23,7 @@
         </b-col>
         <b-col v-if="contactsPageInfo.content" class="is-contacts__info-details" v-html="contactsPageInfo.content.rendered" />
         <b-col md="6" class="is-contacts__info-map">
-            <img v-if="contactsPageInfo.acf" class="img-fluid" :src="contactsPageInfo.acf.contacts_map" alt="contactsPageInfo.title">
+          <img v-if="contactsPageInfo.acf" class="img-fluid" :src="contactsPageInfo.acf.contacts_map" alt="contactsPageInfo.title">
         </b-col>
       </b-row>
     </b-container>

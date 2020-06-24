@@ -15,19 +15,34 @@
           </ol>
         </nav>
       </div>
-      <ServicesList />
+      <ServicesList
+        :servicesData="SERVICES"
+      />
     </b-container>
   </div>
 </template>
 
 <script>
-
+import { mapActions, mapGetters } from 'vuex'
 import ServicesList from '@/components/services/services'
 
 export default {
   name: 'ServicesPage',
   components: {
     ServicesList
+  },
+  computed: {
+    ...mapGetters([
+      'SERVICES'
+    ])
+  },
+  mounted () {
+    this.GET_SERVICES_FROM_API()
+  },
+  methods: {
+    ...mapActions([
+      'GET_SERVICES_FROM_API'
+    ])
   },
   head: {
     title: 'Услуги компании | Ревизор 🚀',

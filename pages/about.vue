@@ -36,7 +36,8 @@ export default {
   },
   data () {
     return {
-      aboutPageInfo: {}
+      aboutPageInfo: {},
+      pageTitle: {}
     }
   },
   mounted () {
@@ -44,11 +45,14 @@ export default {
       .get('http://revisor.iceslam.ru/wp-json/wp/v2/pages/14')
       .then(response => (this.aboutPageInfo = response.data))
   },
-  head: {
-    title: 'О компании | Ревизор 🚀',
-    meta: [
-      { hid: 'description', name: 'description', content: 'About page description' }
-    ]
+  head () {
+    const pageTitle = this.aboutPageInfo.yoast_title
+    return {
+      title: pageTitle + ' | Ревизор 🚀',
+      meta: [
+        { hid: 'description', name: 'description', content: 'About page description' }
+      ]
+    }
   }
 }
 </script>
