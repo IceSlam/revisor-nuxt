@@ -21,7 +21,7 @@
         </nav>
       </div>
       <h2 v-if="servicesItemPageData.acf">
-      {{ servicesItemPageData.acf.service_longtitle }}
+        {{ servicesItemPageData.acf.service_longtitle }}
       </h2>
     </b-container>
     <b-row class="is-services-item-advantage">
@@ -108,11 +108,14 @@ export default {
       'GET_SERVICES_FROM_API'
     ])
   },
-  head: {
-    title: 'Наименование услуги' + ' / Услуги компании | Ревизор 🚀',
-    meta: [
-      { hid: 'description', name: 'description', content: 'Services page description' }
-    ]
+  head () {
+    const PageTitle = this.servicesItemPageData.title.rendered
+    return {
+      title: PageTitle + ' / Услуги компании | Ревизор 🚀',
+      meta: [
+        { hid: 'description', name: 'description', content: 'Services page description' }
+      ]
+    }
   }
 }
 </script>

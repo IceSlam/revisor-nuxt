@@ -1,7 +1,9 @@
 <template>
   <div id="home-page">
     <SliderHome />
-    <servicesListHome />
+    <ServicesListHome
+    :servicesData="SERVICES"
+    />
     <AboutHomeTpl />
     <certifsTpl />
   </div>
@@ -9,8 +11,9 @@
 
 <script>
 
+import { mapActions, mapGetters } from 'vuex'
 import SliderHome from '@/components/home/slider'
-import servicesListHome from '@/components/home/services-home'
+import ServicesListHome from '@/components/home/services-home'
 import AboutHomeTpl from '@/components/home/about'
 import certifsTpl from '@/components/home/certifs'
 
@@ -19,7 +22,20 @@ export default {
     SliderHome,
     certifsTpl,
     AboutHomeTpl,
-    servicesListHome
+    ServicesListHome
+  },
+  computed: {
+    ...mapGetters([
+      'SERVICES'
+    ])
+  },
+  mounted () {
+    this.GET_SERVICES_FROM_API()
+  },
+  methods: {
+    ...mapActions([
+      'GET_SERVICES_FROM_API'
+    ])
   },
   head: {
     title: 'Ревизор - бухгалтерские и юридические услуги 🚀',
