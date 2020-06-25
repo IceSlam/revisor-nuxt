@@ -14,13 +14,13 @@
         <b-collapse id="header-nav" class="is-navbar__collapse" is-nav>
           <b-row>
             <b-col md="12">
-              <a href="https://yandex.ru/maps/-/CCQdf8aIWB" target="_blank">
-                <i class="fas fa-map-marker-alt " />
-                г. Барнаул, ул. Пролетарская, 92
+              <a v-if="contactsItemsInfo.acf" :href="contactsItemsInfo.acf.sys_address_link" target="_blank">
+                <i class="fas fa-map-marker-alt "></i>
+                {{ contactsItemsInfo.acf.sys_address }}
               </a>
-              <a href="mailto:info@info.ru">
-                <i class="fas fa-envelope" />
-                info@info.ru
+              <a v-if="contactsItemsInfo.acf" :href="'mailto:' + contactsItemsInfo.acf.sys_email">
+                <i class="fas fa-envelope"></i>
+                {{ contactsItemsInfo.acf.sys_email }}
               </a>
             </b-col>
             <b-col md="12">
@@ -56,8 +56,8 @@
           <b-col md="4" class="is-header__phone-block">
             <b-row style="margin-top:-45px;">
               <b-col md="12" class="is-header__phone-item-block">
-                <a href="tel:88000002525" class="is-header__phone" style="font-weight:bold !important;color:#3f3e3e !important;font-size:20px !important;">
-                  8-800-000-25-25
+                <a v-if="contactsItemsInfo.acf" :href="'tel:'+ contactsItemsInfo.acf.sys_phone" class="is-header__phone" style="font-weight:bold !important;color:#3f3e3e !important;font-size:20px !important;">
+                  {{ contactsItemsInfo.acf.sys_phone }}
                 </a>
               </b-col>
               <b-col md="12" class="is-header__callback-block">
@@ -103,8 +103,20 @@
 </template>
 
 <script>
+
+import axios from 'axios'
 export default {
-  name: 'HeaderTpl'
+  name: 'HeaderTpl',
+  data () {
+    return {
+      contactsItemsInfo: {}
+    }
+  },
+  mounted () {
+    axios
+      .get('http://revisor.iceslam.ru/wp-json/wp/v2/pages/5')
+      .then(response => (this.contactsItemsInfo = response.data))
+  }
 }
 </script>
 

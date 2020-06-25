@@ -2,7 +2,7 @@
   <div id="home-page">
     <SliderHome />
     <ServicesListHome
-    :servicesData="SERVICES"
+      :servicesData="SERVICES"
     />
     <AboutHomeTpl />
     <certifsTpl />

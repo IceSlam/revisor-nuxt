@@ -36,7 +36,7 @@
               <b-col md="8" class="d-flex" style="align-items:center;">
                 <div class="custom-control custom-checkbox">
                   <input id="defaultUnchecked" type="checkbox" class="custom-control-input" required>
-                  <label class="custom-control-label" for="defaultUnchecked"><router-link to="/policy">С политикой конфидициальных данных ознакомлен</router-link></label>
+                  <label class="custom-control-label" for="defaultUnchecked"><router-link to="/policy" exact>С политикой конфидициальных данных ознакомлен</router-link></label>
                 </div>
               </b-col>
             </b-row>

@@ -9,34 +9,34 @@
           <b-col md="8">
             <b-row>
               <b-col md="12">
-                <a href="https://yandex.ru/maps/-/CCQdf8aIWB" target="_blank">
-                  <i class="fas fa-map-marker-alt" />
-                  г. Барнаул, ул. Пролетарская, 92
+                <a v-if="contactsItemsInfo.acf" :href="contactsItemsInfo.acf.sys_address_link" target="_blank">
+                  <i class="fas fa-map-marker-alt"></i>
+                  {{ contactsItemsInfo.acf.sys_address }}
                 </a>
-                <a href="mailto:info@info.ru" target="_blank">
-                  <i class="fas fa-envelope" />
-                  info@info.ru
+                <a v-if="contactsItemsInfo.acf" :href="contactsItemsInfo.acf.sys_email" target="_blank">
+                  <i class="fas fa-envelope"></i>
+                  {{ contactsItemsInfo.acf.sys_email }}
                 </a>
               </b-col>
               <b-col md="12" style="margin-top:.5em">
                 <div style="margin-bottom:.5em">
-                  <a class="btn" href="#" target="_blank">
-                    <i class="fab fa-vk" />
+                  <a v-if="contactsItemsInfo.acf" class="btn" :href="contactsItemsInfo.acf.sys_social_vk" target="_blank">
+                    <i class="fab fa-vk"></i>
                   </a>
-                  <a class="btn" href="#" target="_blank">
-                    <i class="fab fa-facebook-f" />
+                  <a v-if="contactsItemsInfo.acf" class="btn" :href="contactsItemsInfo.acf.sys_social_fb" target="_blank">
+                    <i class="fab fa-facebook-f"></i>
                   </a>
-                  <a class="btn" href="#" target="_blank">
-                    <i class="fab fa-odnoklassniki" />
+                  <a v-if="contactsItemsInfo.acf" class="btn" :href="contactsItemsInfo.acf.sys_social_ok" target="_blank">
+                    <i class="fab fa-odnoklassniki"></i>
                   </a>
-                  <a class="btn" href="#" target="_blank">
-                    <i class="fas fa-at" />
+                  <a v-if="contactsItemsInfo.acf" class="btn" :href="contactsItemsInfo.acf.sys_social_mailru" target="_blank">
+                    <i class="fas fa-at"></i>
                   </a>
-                  <a class="btn" href="#" target="_blank">
-                    <i class="fab fa-twitter" />
+                  <a v-if="contactsItemsInfo.acf" class="btn" :href="contactsItemsInfo.acf.sys_social_twitter" target="_blank">
+                    <i class="fab fa-twitter"></i>
                   </a>
-                  <a class="btn" href="#" target="_blank">
-                    <i class="fab fa-instagram" />
+                  <a v-if="contactsItemsInfo.acf" class="btn" :href="contactsItemsInfo.acf.sys_social_inst" target="_blank">
+                    <i class="fab fa-instagram"></i>
                   </a>
                 </div>
               </b-col>
@@ -45,8 +45,8 @@
           <b-col md="4">
             <b-row>
               <b-col md="12" style="margin-top:.5em">
-                <a class="is-footer__phone" href="tel:88000002525">
-                  8-800-000-25-25
+                <a v-if="contactsItemsInfo.acf" class="is-footer__phone" :href="'tel:'+ contactsItemsInfo.acf.sys_phone">
+                  {{ contactsItemsInfo.acf.sys_phone }}
                 </a>
               </b-col>
               <b-col md="12" style="margin-top:.5em">
@@ -63,8 +63,21 @@
 </template>
 
 <script>
+
+import axios from 'axios'
+
 export default {
-  name: 'FooterTpl'
+  name: 'FooterTpl',
+  data () {
+    return {
+      contactsItemsInfo: {}
+    }
+  },
+  mounted () {
+    axios
+      .get('http://revisor.iceslam.ru/wp-json/wp/v2/pages/5')
+      .then(response => (this.contactsItemsInfo = response.data))
+  }
 }
 </script>
 
