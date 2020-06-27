@@ -15,11 +15,11 @@
           <b-row>
             <b-col md="12">
               <a v-if="contactsItemsInfo.acf" :href="contactsItemsInfo.acf.sys_address_link" target="_blank">
-                <i class="fas fa-map-marker-alt "></i>
+                <i class="fas fa-map-marker-alt" />
                 {{ contactsItemsInfo.acf.sys_address }}
               </a>
               <a v-if="contactsItemsInfo.acf" :href="'mailto:' + contactsItemsInfo.acf.sys_email">
-                <i class="fas fa-envelope"></i>
+                <i class="fas fa-envelope" />
                 {{ contactsItemsInfo.acf.sys_email }}
               </a>
             </b-col>

@@ -29,7 +29,7 @@
     <h2 style="margin-top:3rem;margin-bottom:3rem;font-family: Nunito;font-style: normal;font-weight: bold;font-size: 40px;line-height: 120%;color: #3F3E3E;">
       Политика конфиденциальности
     </h2>
-    <b-container v-if="policyPageInfo.content" v-html="policyPageInfo.content.rendered" style="padding-bottom:5rem;"></b-container>
+    <b-container v-if="policyPageInfo.content" style="padding-bottom:5rem;" v-html="policyPageInfo.content.rendered" />
   </div>
 </template>
 

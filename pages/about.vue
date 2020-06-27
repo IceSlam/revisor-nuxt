@@ -11,7 +11,7 @@
       </b-col>
     </b-row>
   </b-container>
-  <b-container id="about-page" class="is-about" style="background:none;" v-else>
+  <b-container v-else id="about-page" class="is-about" style="background:none;">
     <div class="is-breadcrumb-list">
       <nav aria-label="breadcrumb">
         <ol class="breadcrumb">

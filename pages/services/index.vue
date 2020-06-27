@@ -11,7 +11,7 @@
       </b-col>
     </b-row>
   </b-container>
-  <div id="services-page" class="is-services" v-else>
+  <div v-else id="services-page" class="is-services">
     <b-container>
       <div class="is-breadcrumb-list">
         <nav aria-label="breadcrumb">

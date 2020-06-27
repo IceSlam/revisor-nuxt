@@ -30,7 +30,7 @@
         </span>
       </p>
       <div class="is-news__page-content">
-        <div v-if="newsItemPageData.content" v-html="newsItemPageData.content.rendered"></div>
+        <div v-if="newsItemPageData.content" v-html="newsItemPageData.content.rendered" />
       </div>
     </b-container>
   </div>

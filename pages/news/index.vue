@@ -11,7 +11,7 @@
       </b-col>
     </b-row>
   </b-container>
-  <b-container id="news-page" class="is-news" v-else>
+  <b-container v-else id="news-page" class="is-news">
     <div class="is-breadcrumb-list">
       <nav aria-label="breadcrumb">
         <ol class="breadcrumb">

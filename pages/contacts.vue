@@ -11,7 +11,7 @@
       </b-col>
     </b-row>
   </b-container>
-  <div id="contacts-page" class="is-contacts" v-else>
+  <div v-else id="contacts-page" class="is-contacts">
     <b-container>
       <div class="is-breadcrumb-list">
         <nav aria-label="breadcrumb">

@@ -10,33 +10,33 @@
             <b-row>
               <b-col md="12">
                 <a v-if="contactsItemsInfo.acf" :href="contactsItemsInfo.acf.sys_address_link" target="_blank">
-                  <i class="fas fa-map-marker-alt"></i>
+                  <i class="fas fa-map-marker-alt" />
                   {{ contactsItemsInfo.acf.sys_address }}
                 </a>
                 <a v-if="contactsItemsInfo.acf" :href="contactsItemsInfo.acf.sys_email" target="_blank">
-                  <i class="fas fa-envelope"></i>
+                  <i class="fas fa-envelope" />
                   {{ contactsItemsInfo.acf.sys_email }}
                 </a>
               </b-col>
               <b-col md="12" style="margin-top:.5em">
                 <div style="margin-bottom:.5em">
                   <a v-if="contactsItemsInfo.acf" class="btn" :href="contactsItemsInfo.acf.sys_social_vk" target="_blank">
-                    <i class="fab fa-vk"></i>
+                    <i class="fab fa-vk" />
                   </a>
                   <a v-if="contactsItemsInfo.acf" class="btn" :href="contactsItemsInfo.acf.sys_social_fb" target="_blank">
-                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-facebook-f" />
                   </a>
                   <a v-if="contactsItemsInfo.acf" class="btn" :href="contactsItemsInfo.acf.sys_social_ok" target="_blank">
-                    <i class="fab fa-odnoklassniki"></i>
+                    <i class="fab fa-odnoklassniki" />
                   </a>
                   <a v-if="contactsItemsInfo.acf" class="btn" :href="contactsItemsInfo.acf.sys_social_mailru" target="_blank">
-                    <i class="fas fa-at"></i>
+                    <i class="fas fa-at" />
                   </a>
                   <a v-if="contactsItemsInfo.acf" class="btn" :href="contactsItemsInfo.acf.sys_social_twitter" target="_blank">
-                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-twitter" />
                   </a>
                   <a v-if="contactsItemsInfo.acf" class="btn" :href="contactsItemsInfo.acf.sys_social_inst" target="_blank">
-                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-instagram" />
                   </a>
                 </div>
               </b-col>
