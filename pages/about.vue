@@ -55,7 +55,7 @@ export default {
   },
   mounted () {
     axios
-      .get('http://revisor.iceslam.ru/wp-json/wp/v2/pages/14')
+      .get('http://a.al-dev.ru/wp-json/wp/v2/pages/14')
       .then(response => (this.aboutPageInfo = response.data))
     this.loadPageData = false
   },
