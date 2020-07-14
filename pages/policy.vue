@@ -48,7 +48,7 @@ export default {
   },
   mounted () {
     axios
-      .get('http://revisor.iceslam.ru/wp-json/wp/v2/pages/3')
+      .get('https://a.al-dev.ru/wp-json/wp/v2/pages/3')
       .then(response => (this.policyPageInfo = response.data))
     this.loadPageData = false
   },

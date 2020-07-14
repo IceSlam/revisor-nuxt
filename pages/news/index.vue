@@ -64,7 +64,7 @@ export default {
   },
   mounted () {
     axios
-      .get('http://a.al-dev.ru/wp-json/wp/v2/categories/2')
+      .get('https://a.al-dev.ru/wp-json/wp/v2/categories/2')
       .then(response => (this.newsCategoryInfo = response.data))
     this.GET_NEWS_FROM_API()
     this.loadPageData = false

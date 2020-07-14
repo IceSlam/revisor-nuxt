@@ -45,7 +45,7 @@ export default {
   },
   mounted () {
     axios
-      .get('http://a.al-dev.ru/wp-json/wp/v2/pages/14')
+      .get('https://a.al-dev.ru/wp-json/wp/v2/pages/14')
       .then(response => (this.aboutPageInfo = response.data))
   }
 }
