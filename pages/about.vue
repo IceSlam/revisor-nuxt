@@ -49,7 +49,6 @@ export default {
   data () {
     return {
       aboutPageInfo: {},
-      pageTitle: {},
       loadPageData: true
     }
   },
@@ -60,9 +59,8 @@ export default {
     this.loadPageData = false
   },
   head () {
-    const pageTitle = this.aboutPageInfo.yoast_title
     return {
-      title: pageTitle + ' | Ревизор 🚀',
+      title:'О компании | Ревизор 🚀',
       meta: [
         { hid: 'description', name: 'description', content: 'About page description' }
       ]
