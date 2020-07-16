@@ -48,7 +48,7 @@ export default {
   },
   mounted () {
     axios
-      .get('https://a.al-dev.ru/wp-json/wp/v2/pages/3')
+      .get('https://buhrevizor.ru/wp-json/wp/v2/pages/3')
       .then(response => (this.policyPageInfo = response.data))
     this.loadPageData = false
   },

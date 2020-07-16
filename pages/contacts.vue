@@ -57,7 +57,7 @@ export default {
   },
   mounted () {
     axios
-      .get('https://a.al-dev.ru/wp-json/wp/v2/pages/16')
+      .get('https://buhrevizor.ru/wp-json/wp/v2/pages/16')
       .then(response => (this.contactsPageInfo = response.data))
     this.loadPageData = false
   },
