@@ -60,7 +60,7 @@ export default {
   },
   head () {
     return {
-      title:'О компании | Ревизор 🚀',
+      title: 'О компании | Ревизор 🚀',
       meta: [
         { hid: 'description', name: 'description', content: 'About page description' }
       ]

@@ -2,7 +2,7 @@
   <b-col md="6">
     <div class="is-news__item card">
       <div class="is-news__item-content">
-        <img src="https://a.al-dev.ru/assets/img/servicesIcon1.svg" alt="Новости">
+        <img src="https://buhrevizor.ru/assets/img/servicesIcon1.svg" alt="Новости">
         <div>
           <p>
             {{ newsItemData.title.rendered }}

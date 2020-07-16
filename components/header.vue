@@ -114,7 +114,7 @@ export default {
   },
   mounted () {
     axios
-      .get('https://a.al-dev.ru/wp-json/wp/v2/pages/5')
+      .get('https://buhrevizor.ru/wp-json/wp/v2/pages/5')
       .then(response => (this.contactsItemsInfo = response.data))
   }
 }

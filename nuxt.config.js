@@ -69,5 +69,25 @@ export default {
   ** See https://nuxtjs.org/api/configuration-build/
   */
   build: {
+  },
+  /*
+  ** PWA module configuration
+  */
+  pwa: {
+    meta: {
+      mobileAppIOS: 'true',
+      title: 'Ревизор',
+      author: 'IceSlam',
+      description: 'Приложение PWA для сайта компании Ревизор',
+      theme_color: '#de3131',
+      lang: 'ru',
+      ogSiteName: 'Ревизор',
+      ogTitle: 'Ревизор',
+      ogDescription: 'Приложение PWA для сайта компании Ревизор',
+      ogHost: 'https://buhrevizor.ru',
+      ogImage: 'https://buhrevizor.ru/wp-content/uploads/2020/06/cropped-android-chrome-192x192-1-270x270.png',
+      ogUrl: 'https://buhrevizor.ru',
+      nativeUI: 'true'
+    }
   }
 }
