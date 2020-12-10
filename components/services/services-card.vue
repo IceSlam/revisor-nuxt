@@ -5,7 +5,7 @@
         <img src="https://buhrevizor.ru/assets/img/servicesIcon1.svg" alt="Услуга">
         <div>
           <p>
-            {{ servicesItemData.title.rendered }}
+            {{ servicesItemData.title }}
           </p>
           <p class="is-services__item-chevron">
             <i class="fas fa-chevron-right" />
@@ -15,7 +15,7 @@
           </a>
         </div>
         <p class="is-services__item-description">
-          {{ servicesItemData.acf.service_longtitle }}
+          {{ servicesItemData.content }}
         </p>
       </div>
     </div>

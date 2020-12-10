@@ -15,7 +15,7 @@ const store = () => new Vuex.Store({
   },
   actions: {
     GET_SERVICES_FROM_API ({ commit }) {
-      return axios('https://strapi-test-back.herokuapp.com/articles', {
+      return axios('http://strapi-test-back.herokuapp.com/articles', {
         method: 'GET'
       })
         .then((response) => {
